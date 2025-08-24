@@ -14,7 +14,7 @@ import (
 type Movie struct{
 	ID string `json:"id"`
 	Isbn string `json:"isbn"`
-	Title string `json:"tile"`
+	Title string `json:"title"`
 	Director *Director `json:"director"`
 }
 
@@ -53,6 +53,7 @@ func getMovie(w http.ResponseWriter, r *http.Request){
 			return
 		}
 	}
+
 }
 
 func createMovie(w http.ResponseWriter, r *http.Request){
@@ -80,6 +81,7 @@ func updateMovie(w http.ResponseWriter, r *http.Request){
 			return
 		}
 	}
+
 }
 
 func main(){
